@@ -2,7 +2,7 @@
 using namespace std;
 
 void dfs(vector<string> &A, int x, int y){
-    if(x>=A.size()||A[x].length()<=y){
+    if(x>=A.size()||y>=A[x].length()){
         return ;
     }
 	if(A[x][y]=='X'){
